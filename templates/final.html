@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Trivia</title>
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="container mt-5 text-center">
+    <h1 class="display-6">
+        Result: {{ score }} / {{ len }}
+    </h1>
+    <p class="lead">
+        Interesting online trivia game
+    </p>
+    <center>
+        <ul class="list-group rounded-0 mt-3 col-8">
+            {% for answer in answers %}
+            <li class="list-group-item {% if answer.correct == True %}list-group-item-success{% else %}list-group-item-danger{% endif %}">
+                {{ answer.text }}
+            </li>
+            {% endfor %}
+        </ul>
+    </center>
+    <a href="/" type="button" class="btn btn-secondary lead rounded-0 col-4 mt-3">
+        Main menu
+    </a>
+</div>
+
+</body>
+</html>

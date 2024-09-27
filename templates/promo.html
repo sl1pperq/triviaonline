@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Trivia</title>
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="container mt-5 text-center">
+    <h1 class="display-6">
+        Online Trivia
+    </h1>
+    <p class="lead">
+        An exciting trivia game
+    </p>
+    <a href="/start?q=10" type="button" class="btn btn-secondary lead rounded-0 col-9 mt-3">
+        Classic
+    </a>
+    <div class="mt-2">
+        <a href="/start?q=5" type="button" class="btn btn-outline-secondary lead rounded-0 col-3">
+            Short
+        </a>
+        <a href="/start?q={{ num }}" type="button" class="btn btn-outline-secondary lead rounded-0 col-3">
+            Random
+        </a>
+        <a href="/start?q=20" type="button" class="btn btn-outline-secondary lead rounded-0 col-3">
+            Long
+        </a>
+    </div>
+
+    <h1 class="display-6 mt-5">
+        Difficulty
+    </h1>
+    <p class="lead">
+        Choose the difficulty of trivia
+    </p>
+    <div>
+        <a href="/start?q=10&difficulty=medium" type="button" class="btn btn-secondary lead rounded-0 col-3">
+            Medium
+        </a>
+        <a href="/start?q=10&difficulty=easy" type="button" class="btn btn-secondary lead rounded-0 col-3">
+            Easy
+        </a>
+        <a href="/start?q=10&difficulty=hard" type="button" class="btn btn-secondary lead rounded-0 col-3">
+            Hard
+        </a>
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row g-3">
+        <div class="col-md-4">
+            <div class="card rounded-0">
+                <img src="https://media.istockphoto.com/id/1307457391/photo/happy-black-student-raising-arm-to-answer-question-while-attending-class-with-her-university.jpg?s=612x612&w=0&k=20&c=iZaZFyC-WqlqSQc4elqUNPTxLvWPe8P5Tb_YdZnrI9Q="
+                     class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                    <p class="card-text lead">
+                        Learn new things from anywhere in the world, whether in Africa or in Russia. This is a free
+                        education.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card rounded-0">
+                <img src="https://media.istockphoto.com/id/1361844238/photo/high-school-professor-assisting-her-students-in-e-learning-on-laptop-in-the-classroom.jpg?s=612x612&w=0&k=20&c=RUI6d64h2mszvH2CicmeSCp_sZowN1p81dtuctGIaRM="
+                     class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                    <p class="card-text lead">
+                        More than 50 interesting topics to study - from computer technology to the history of ancient
+                        Rome
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card rounded-0">
+                <img src="https://media.istockphoto.com/id/502281790/photo/getting-help-on-a-homework-question.jpg?s=612x612&w=0&k=20&c=a3leVCL7ShtKOuTgj5J8UX6uN0DoIezAeFJC28mA9xs="
+                     class="card-img-top rounded-0" alt="...">
+                <div class="card-body">
+                    <p class="card-text lead">
+                        All the trivialities are configured separately, and then you will receive a transcript of the
+                        answer
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
